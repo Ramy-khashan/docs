@@ -1,0 +1,428 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#9C1447" />
+
+  <title>حذف الحساب — Ladies Salon</title>
+
+  <meta
+    name="description"
+    content="تعرف على كيفية طلب حذف حسابك والبيانات المرتبطة بك من تطبيق Ladies Salon."
+  />
+
+  <style>
+    :root {
+      --primary: #9C1447;
+      --primary-light: #C2185B;
+      --primary-dark: #6A0D32;
+      --primary-container: #FFDDE9;
+      --secondary: #B5722A;
+      --secondary-container: #FFEFD5;
+      --background: #FFF9FB;
+      --surface: #FFFFFF;
+      --text: #1A0A11;
+      --muted: #6D5560;
+      --hint: #A08090;
+      --border: #E8D5DC;
+      --divider: #F0E0E8;
+      --error: #BA1A1A;
+      --success: #2E7D32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
+    .hero {
+      padding: 38px 20px 42px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary),
+        var(--primary-light)
+      );
+    }
+
+    .brand {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 30px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    .hero p {
+      margin: 0;
+      color: #FFEAF1;
+    }
+
+    main {
+      width: min(100% - 32px, 780px);
+      margin: 28px auto 56px;
+    }
+
+    section {
+      margin-bottom: 18px;
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(106, 13, 50, 0.035);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 8px 0 14px;
+    }
+
+    .meta {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ol,
+    ul {
+      padding-inline-start: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .notice {
+      padding: 14px 16px;
+      background: #FFF0F5;
+      border-right: 4px solid var(--primary-light);
+      border-radius: 8px;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 18px;
+      color: #fff;
+      background: var(--primary);
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact:hover {
+      background: var(--primary-dark);
+    }
+
+    .gold {
+      color: var(--secondary);
+    }
+
+    .divider {
+      height: 1px;
+      margin: 36px 0;
+      background: var(--divider);
+      border: 0;
+    }
+
+    .en {
+      direction: ltr;
+      text-align: left;
+    }
+
+    .en ol,
+    .en ul {
+      padding-left: 24px;
+      padding-right: 0;
+    }
+
+    footer {
+      padding: 20px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        width: calc(100% - 20px);
+        margin-top: 16px;
+      }
+
+      section {
+        padding: 17px;
+      }
+
+      .hero {
+        padding: 30px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="brand">Ladies Salon</div>
+    <h1>طلب حذف الحساب</h1>
+    <p>إدارة حسابك وبياناتك بكل سهولة ووضوح</p>
+  </header>
+
+  <main>
+    <section lang="ar" dir="rtl">
+      <h2>حذف حسابك من Ladies Salon</h2>
+
+      <p class="meta">
+        Ladies Salon · آخر تحديث: 11 أكتوبر 2026
+      </p>
+
+      <p>
+        توضح هذه الصفحة كيفية طلب حذف حسابك والبيانات المرتبطة به من تطبيق
+        <strong>Ladies Salon</strong>، المخصص لشراء منتجات التجميل وحجز
+        الخدمات والبكدجات وطلب توصيل المنتجات.
+      </p>
+
+      <h2>كيفية طلب حذف الحساب</h2>
+
+      <ol>
+        <li>
+          افتح تطبيق Ladies Salon وانتقل إلى صفحة الملف الشخصي أو الإعدادات،
+          إذا كان خيار حذف الحساب متاحًا داخل التطبيق.
+        </li>
+        <li>
+          اختر حذف الحساب واتبع التعليمات الظاهرة لتقديم طلبك وتأكيده.
+        </li>
+        <li>
+          إذا لم تتمكن من تقديم الطلب من التطبيق، يمكنك التواصل معنا عبر
+          البريد الإلكتروني الموضح أدناه.
+        </li>
+        <li>
+          عند التواصل عبر البريد، استخدم عنوان الرسالة:
+          <strong>طلب حذف حساب Ladies Salon</strong>.
+        </li>
+        <li>
+          اذكر البريد الإلكتروني المسجل في حسابك واطلب حذف الحساب والبيانات
+          المرتبطة به. قد نطلب معلومات إضافية للتحقق من ملكية الحساب.
+        </li>
+      </ol>
+
+      <p class="notice">
+        <strong>مهم:</strong>
+        تقديم طلب الحذف لا يعني بالضرورة إلغاء الطلبات أو الحجوزات القائمة
+        تلقائيًا. يرجى التواصل مع الدعم بخصوص أي طلبات أو حجوزات لم تكتمل.
+      </p>
+
+      <h2>البيانات المرتبطة بالحساب</h2>
+
+      <p>
+        قد يتضمن حسابك أنواع البيانات التالية، وفقًا للميزات التي استخدمتها
+        داخل التطبيق:
+      </p>
+
+      <ul>
+        <li>بيانات الحساب والملف الشخصي.</li>
+        <li>معلومات التواصل وعناوين التوصيل المحفوظة.</li>
+        <li>المنتجات المفضلة وسلة التسوق.</li>
+        <li>سجل الطلبات وطلبات توصيل المنتجات.</li>
+        <li>حجوزات الخدمات والبكدجات.</li>
+        <li>الإشعارات والتفضيلات المرتبطة بالحساب.</li>
+      </ul>
+
+      <p>
+        تتم معالجة البيانات المرتبطة بطلب الحذف وفقًا لسياسة الخصوصية
+        وإجراءات الحذف المعتمدة في التطبيق.
+      </p>
+
+      <h2>البيانات التي قد يتم الاحتفاظ بها</h2>
+
+      <ul>
+        <li>
+          بعض سجلات الطلبات أو المعاملات المالية التي يلزم الاحتفاظ بها
+          لأغراض قانونية أو محاسبية، إذا كان ذلك واجبًا.
+        </li>
+        <li>
+          البيانات اللازمة لمعالجة طلب أو حجز قائم، عندما يكون الاحتفاظ بها
+          ضروريًا ومسموحًا به.
+        </li>
+        <li>
+          النسخ الاحتياطية التقنية، وفقًا لسياسة الاحتفاظ بالبيانات المعتمدة.
+        </li>
+      </ul>
+
+      <p>
+        لا تعني هذه الحالات الاحتفاظ بجميع بياناتك؛ بل يقتصر الاحتفاظ على
+        البيانات التي يوجد سبب مشروع للاحتفاظ بها.
+      </p>
+
+      <h2>التواصل معنا</h2>
+
+      <p>
+        إذا واجهت مشكلة في تقديم طلب حذف الحساب، يرجى التواصل مع فريق الدعم:
+      </p>
+
+      <a class="contact" href="mailto:YOUR_SUPPORT_EMAIL">
+        التواصل مع الدعم
+      </a>
+
+      <p class="meta" style="margin-top: 18px;">
+        يرجى استبدال بريد الدعم بعنوان البريد الإلكتروني الرسمي للتطبيق قبل
+        نشر الصفحة.
+      </p>
+
+      <p>
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="en" lang="en" dir="ltr">
+      <h2>Delete your Ladies Salon account</h2>
+
+      <p class="meta">
+        Ladies Salon · Last updated: October 11, 2026
+      </p>
+
+      <p>
+        This page explains how to request the deletion of your
+        <strong>Ladies Salon</strong> account and associated data.
+        Ladies Salon allows customers to purchase beauty products, book
+        services and packages, and arrange product delivery.
+      </p>
+
+      <h2>How to request account deletion</h2>
+
+      <ol>
+        <li>
+          Open the Ladies Salon app and navigate to your profile or settings,
+          if an account deletion option is available.
+        </li>
+        <li>
+          Select Delete Account and follow the on-screen instructions to
+          submit and confirm your request.
+        </li>
+        <li>
+          If you cannot submit a request through the app, contact us using
+          the support email provided below.
+        </li>
+        <li>
+          Use the subject line:
+          <strong>Request to Delete Ladies Salon Account</strong>.
+        </li>
+        <li>
+          Include the email address registered to your account and clearly
+          request account and associated data deletion. Additional
+          information may be required to verify account ownership.
+        </li>
+      </ol>
+
+      <p class="notice">
+        <strong>Important:</strong>
+        Submitting an account deletion request does not necessarily cancel
+        pending orders or bookings automatically. Contact support if you
+        have outstanding orders or appointments.
+      </p>
+
+      <h2>Data associated with your account</h2>
+
+      <p>
+        Depending on the features you have used, your account may be
+        associated with the following data:
+      </p>
+
+      <ul>
+        <li>Account and profile information.</li>
+        <li>Contact information and saved delivery addresses.</li>
+        <li>Favorite products and shopping cart data.</li>
+        <li>Order history and product delivery requests.</li>
+        <li>Service and package bookings.</li>
+        <li>Notifications and account preferences.</li>
+      </ul>
+
+      <p>
+        Data associated with your deletion request is handled in accordance
+        with the app's privacy policy and applicable deletion procedures.
+      </p>
+
+      <h2>Data that may be retained</h2>
+
+      <ul>
+        <li>
+          Certain order or financial transaction records where retention
+          is required for legal or accounting purposes.
+        </li>
+        <li>
+          Information needed to process an outstanding order or booking,
+          where retention is necessary and permitted.
+        </li>
+        <li>
+          Technical backup data, according to the applicable data retention
+          policy.
+        </li>
+      </ul>
+
+      <p>
+        These exceptions do not mean that all your data will be retained.
+        Only information with a legitimate retention purpose may be kept.
+      </p>
+
+      <h2>Contact support</h2>
+
+      <p>
+        If you have trouble submitting your account deletion request,
+        contact our support team:
+      </p>
+
+      <a class="contact" href="mailto:YOUR_SUPPORT_EMAIL">
+        Contact Support
+      </a>
+
+      <p class="meta" style="margin-top: 18px;">
+        Replace the placeholder with the app's official support email
+        before publishing this page.
+      </p>
+
+      <p>
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="gold">Ladies Salon</span>
+    <p>© Ladies Salon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```
