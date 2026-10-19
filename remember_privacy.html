@@ -1,83 +1,374 @@
-# Privacy Policy for تذكّر | Remember
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28594d">
+  <meta name="description" content="Privacy Policy for تذكّر | Remember, a notes, tasks, reminders, and voice notes app.">
+  <title>Privacy Policy | تذكّر Remember</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --forest: #28594d;
+      --forest-deep: #123a34;
+      --sage: #8fc1ab;
+      --amber: #e8a85c;
+      --coral: #e88667;
+      --paper: #f8f1df;
+      --background: #f7f5ef;
+      --card: #ffffff;
+      --text: #1f2a27;
+      --muted: #5c6b65;
+      --border: #e2e8e1;
+      --shadow: 0 18px 50px rgba(18, 58, 52, .09);
+    }
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --background: #0c1614;
+      --card: #172723;
+      --text: #e8efe9;
+      --muted: #b4c4bc;
+      --border: #2b4039;
+      --shadow: 0 18px 50px rgba(0, 0, 0, .22);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.75;
+      transition: background .2s ease, color .2s ease;
+    }
+    a { color: var(--forest); }
+    [data-theme="dark"] a { color: var(--sage); }
+    .topbar {
+      background: var(--forest-deep);
+      color: #f8f1df;
+      border-bottom: 4px solid var(--amber);
+    }
+    .topbar-inner {
+      max-width: 1080px;
+      margin: auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 750; letter-spacing: .2px; }
+    .brand-mark {
+      display: grid; place-items: center; width: 42px; height: 42px;
+      border-radius: 14px; background: var(--amber); color: var(--forest-deep);
+      font-size: 23px; font-weight: 900;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    button {
+      appearance: none; border: 1px solid rgba(248,241,223,.35); border-radius: 999px;
+      padding: 9px 14px; background: transparent; color: inherit; font: inherit;
+      font-size: .9rem; font-weight: 650; cursor: pointer;
+    }
+    button:hover, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+    .hero {
+      background: linear-gradient(135deg, var(--forest-deep), var(--forest));
+      color: #f8f1df; padding: 62px 24px 78px; position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 290px; height: 290px; border-radius: 50%;
+      right: -80px; top: -115px; border: 1px solid rgba(248,241,223,.15);
+      box-shadow: 0 0 0 34px rgba(248,241,223,.035), 0 0 0 68px rgba(248,241,223,.025);
+    }
+    .hero-inner { max-width: 1080px; margin: auto; position: relative; z-index: 1; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; color: var(--amber);
+      font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.6px;
+    }
+    h1 { margin: 12px 0 10px; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.13; letter-spacing: -1.5px; }
+    .hero p { max-width: 650px; margin: 0; color: #e3eee7; font-size: 1.08rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 25px; color: #d1e2d8; font-size: .92rem; }
+    .meta span { display: inline-flex; align-items: center; gap: 8px; }
+    .meta strong { color: #fff; }
+    main { max-width: 1080px; margin: -34px auto 0; padding: 0 24px 54px; position: relative; z-index: 2; }
+    .notice {
+      display: flex; gap: 14px; align-items: flex-start; padding: 20px 22px; margin-bottom: 22px;
+      background: var(--card); border: 1px solid var(--border); border-left: 5px solid var(--amber);
+      border-radius: 16px; box-shadow: var(--shadow);
+    }
+    [dir="rtl"] .notice { border-left: 1px solid var(--border); border-right: 5px solid var(--amber); }
+    .notice-icon { font-size: 1.35rem; }
+    .notice p { margin: 0; color: var(--muted); }
+    .content-grid { display: grid; grid-template-columns: 235px minmax(0, 1fr); gap: 22px; align-items: start; }
+    nav, .policy-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow);
+    }
+    nav { padding: 20px; position: sticky; top: 18px; }
+    nav h2 { margin: 0 0 12px; font-size: .95rem; color: var(--muted); }
+    nav a { display: block; padding: 7px 0; text-decoration: none; font-size: .91rem; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    .policy-card { padding: clamp(22px, 4vw, 42px); }
+    .policy-section { padding: 0 0 25px; margin: 0 0 25px; border-bottom: 1px solid var(--border); scroll-margin-top: 24px; }
+    .policy-section:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+    h2.section-title { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; font-size: 1.28rem; line-height: 1.4; }
+    .section-number {
+      flex: 0 0 36px; display: grid; place-items: center; width: 36px; height: 36px;
+      border-radius: 12px; background: var(--paper); color: var(--forest-deep); font-size: .9rem; font-weight: 850;
+    }
+    [data-theme="dark"] .section-number { background: #2d493f; color: #f8f1df; }
+    .policy-section p { margin: 8px 0; color: var(--muted); }
+    .policy-section ul { margin: 8px 0; padding-inline-start: 24px; color: var(--muted); }
+    .policy-section li { padding: 3px 0; }
+    .contact-card {
+      margin-top: 24px; padding: 24px; border-radius: 18px;
+      background: var(--paper); color: #302821; border: 1px solid #eadfca;
+    }
+    .contact-card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+    .contact-card p { margin: 0 0 12px; }
+    .contact-card a { color: var(--forest-deep); font-weight: 750; }
+    footer { border-top: 1px solid var(--border); padding: 24px; color: var(--muted); text-align: center; font-size: .88rem; }
+    .footer-brand { color: var(--forest); font-weight: 800; }
+    [data-theme="dark"] .footer-brand { color: var(--sage); }
+    [hidden] { display: none !important; }
+    @media (max-width: 760px) {
+      .topbar-inner { padding: 12px 16px; }
+      .brand { font-size: .93rem; }
+      .brand-mark { width: 36px; height: 36px; }
+      .hero { padding: 48px 20px 64px; }
+      main { padding: 0 14px 36px; }
+      .content-grid { grid-template-columns: 1fr; }
+      nav { position: static; }
+      nav .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 14px; }
+      .policy-card { padding: 22px 18px; }
+    }
+    @media (max-width: 420px) {
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .actions { width: 100%; }
+      .actions button { flex: 1; }
+      nav .nav-links { grid-template-columns: 1fr; }
+      .meta { flex-direction: column; gap: 7px; }
+    }
+    @media print {
+      .topbar, nav, .actions { display: none !important; }
+      .hero { padding: 24px; background: white; color: black; }
+      .hero p, .meta { color: #333; }
+      main { margin: 0; max-width: none; padding: 0; }
+      .content-grid { display: block; }
+      .policy-card, .notice { box-shadow: none; }
+      body { background: white; color: black; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Remember app">
+        <div class="brand-mark" aria-hidden="true">ت</div>
+        <span>تذكّر <span aria-hidden="true">|</span> Remember</span>
+      </div>
+      <div class="actions">
+        <button type="button" id="languageToggle" aria-label="Switch language">العربية</button>
+        <button type="button" id="themeToggle" aria-label="Toggle color theme">☾ Dark mode</button>
+      </div>
+    </div>
+  </header>
 
-Effective date: 2026-10-19
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow"><span aria-hidden="true">✦</span><span data-en="Your privacy matters" data-ar="خصوصيتك تهمّنا">Your privacy matters</span></div>
+      <h1 data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</h1>
+      <p data-en="Learn how تذكّر | Remember handles information when you create notes, organize tasks, set reminders, and record voice notes."
+         data-ar="تعرّف على كيفية تعامل تطبيق تذكّر | Remember مع المعلومات عند إنشاء الملاحظات وتنظيم المهام وضبط التذكيرات وتسجيل المذكرات الصوتية.">
+        Learn how تذكّر | Remember handles information when you create notes, organize tasks, set reminders, and record voice notes.
+      </p>
+      <div class="meta">
+        <span>◷ <span data-en="Effective date:" data-ar="تاريخ السريان:">Effective date:</span> <strong>October 19, 2026</strong></span>
+        <span>✉ <span data-en="Privacy contact:" data-ar="التواصل بشأن الخصوصية:">Privacy contact:</span> <strong>ramykhashan99@gmail.com</strong></span>
+      </div>
+    </div>
+  </section>
 
-Developer: Ramy Khashan  
-Privacy/support contact: ramykhashan99@gmail.com
+  <main>
+    <div class="notice">
+      <div class="notice-icon" aria-hidden="true">ⓘ</div>
+      <p data-en="This policy describes the app’s currently intended data practices based on a review of the inspected source code. Statements about third-party SDKs, backups, and the final release build must be verified before publication."
+         data-ar="توضح هذه السياسة ممارسات البيانات المقصودة حالياً وفقاً لمراجعة الشيفرة المصدرية التي تم فحصها. يجب التحقق من المعلومات المتعلقة بالمكتبات الخارجية والنسخ الاحتياطية ونسخة الإصدار النهائية قبل النشر.">
+        This policy describes the app’s currently intended data practices based on a review of the inspected source code. Statements about third-party SDKs, backups, and the final release build must be verified before publication.
+      </p>
+    </div>
 
-This policy describes the current intended data practices of تذكّر | Remember, an app for creating notes, organizing tasks and reminders, and recording voice notes. The app does not require an account.
+    <div class="content-grid">
+      <nav aria-label="Policy contents">
+        <h2 data-en="ON THIS PAGE" data-ar="محتويات الصفحة">ON THIS PAGE</h2>
+        <div class="nav-links">
+          <a href="#device-data" data-en="On-device information" data-ar="المعلومات على جهازك">On-device information</a>
+          <a href="#permissions" data-en="Permissions" data-ar="الأذونات">Permissions</a>
+          <a href="#sharing" data-en="Sharing & third parties" data-ar="المشاركة والجهات الخارجية">Sharing & third parties</a>
+          <a href="#retention" data-en="Retention & deletion" data-ar="الاحتفاظ والحذف">Retention & deletion</a>
+          <a href="#security" data-en="Security" data-ar="الأمان">Security</a>
+          <a href="#children" data-en="Children’s privacy" data-ar="خصوصية الأطفال">Children’s privacy</a>
+          <a href="#changes" data-en="Policy changes" data-ar="تعديلات السياسة">Policy changes</a>
+          <a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
+        </div>
+      </nav>
 
-## Information Handled On Your Device
+      <div>
+        <article class="policy-card">
+          <section class="policy-section" id="device-data">
+            <h2 class="section-title"><span class="section-number">01</span><span data-en="Information Handled On Your Device" data-ar="المعلومات التي يتعامل معها التطبيق على جهازك">Information Handled On Your Device</span></h2>
+            <div data-en>
+              <p>The app lets you enter note and task content, choose photos to attach to notes, and make voice recordings. It also stores app settings such as language and theme.</p>
+              <p>The inspected app code stores this content in a local database or app-private files to provide its features. The inspected Dart code does not send this content to a developer-operated server. This statement must be checked against all bundled SDKs and the final release build before publication.</p>
+            </div>
+            <div data-ar hidden>
+              <p>يتيح لك التطبيق إدخال محتوى الملاحظات والمهام، واختيار صور لإرفاقها بالملاحظات، وإنشاء تسجيلات صوتية. كما يحفظ إعدادات التطبيق مثل اللغة والمظهر.</p>
+              <p>وفقاً للشيفرة التي تمت مراجعتها، يحفظ التطبيق هذا المحتوى في قاعدة بيانات محلية أو ملفات خاصة بالتطبيق لتشغيل ميزاته. لم تُظهر مراجعة شيفرة Dart إرسال هذا المحتوى إلى خادم يديره المطوّر. يجب التحقق من هذه المعلومات مقابل جميع المكتبات المضمّنة ونسخة الإصدار النهائية قبل النشر.</p>
+            </div>
+          </section>
 
-The app lets you enter note and task content, choose photos to attach to notes, and make voice recordings. It also stores app settings such as language and theme. The inspected app code stores this content in a local database or app-private files to provide the app's features. The inspected Dart code does not send this content to a developer-operated server. This statement must be checked against all bundled SDKs and the final release build before publication.
+          <section class="policy-section" id="permissions">
+            <h2 class="section-title"><span class="section-number">02</span><span data-en="Permissions" data-ar="الأذونات">Permissions</span></h2>
+            <div data-en>
+              <p>The app may request the following permissions to provide features you choose to use:</p>
+              <ul>
+                <li><strong>Microphone:</strong> used when you choose to record a voice note.</li>
+                <li><strong>Photos:</strong> used when you choose photos to attach to a note.</li>
+                <li><strong>Notifications and alarms:</strong> used for task reminders, where supported by your device.</li>
+              </ul>
+              <p>You can manage permissions in your device settings. Denying a permission may disable the related feature.</p>
+            </div>
+            <div data-ar hidden>
+              <p>قد يطلب التطبيق الأذونات التالية لتوفير الميزات التي تختار استخدامها:</p>
+              <ul>
+                <li><strong>الميكروفون:</strong> يُستخدم عند اختيارك تسجيل مذكرة صوتية.</li>
+                <li><strong>الصور:</strong> يُستخدم الوصول إليها عند اختيار صور لإرفاقها بملاحظة.</li>
+                <li><strong>الإشعارات والمنبّهات:</strong> تُستخدم لتذكيرات المهام، وفقاً لما يدعمه جهازك.</li>
+              </ul>
+              <p>يمكنك إدارة الأذونات من إعدادات الجهاز. وقد يؤدي رفض أحد الأذونات إلى تعطيل الميزة المرتبطة به.</p>
+            </div>
+          </section>
 
-## Permissions
+          <section class="policy-section" id="sharing">
+            <h2 class="section-title"><span class="section-number">03</span><span data-en="Sharing And Third Parties" data-ar="المشاركة والجهات الخارجية">Sharing And Third Parties</span></h2>
+            <div data-en>
+              <p>The current source review found no account system, advertising, analytics, or developer-operated backend. The developer must verify this against all third-party SDKs included in the release build.</p>
+              <p>Android system backup and restore may handle app data according to device and account settings. The developer must verify the app’s backup behavior and update this section before publication.</p>
+            </div>
+            <div data-ar hidden>
+              <p>لم تُظهر مراجعة الشيفرة الحالية وجود نظام حسابات أو إعلانات أو تحليلات أو خادم يديره المطوّر. يجب على المطوّر التحقق من ذلك مقابل جميع المكتبات الخارجية في نسخة الإصدار.</p>
+              <p>قد يتعامل Android مع بيانات التطبيق عبر النسخ الاحتياطي والاستعادة بحسب إعدادات الجهاز والحساب. يجب التحقق من سلوك النسخ الاحتياطي وتحديث هذا القسم قبل النشر.</p>
+            </div>
+          </section>
 
-The microphone is used when you choose to record a voice note. Photo access is used when you choose photos to attach to a note. Notification and alarm-related permissions are used for task reminders. You can manage permissions in your device settings; denying permission may disable the related feature.
+          <section class="policy-section" id="retention">
+            <h2 class="section-title"><span class="section-number">04</span><span data-en="Retention And Deletion" data-ar="الاحتفاظ بالبيانات وحذفها">Retention And Deletion</span></h2>
+            <div data-en>
+              <p>Content remains in the app’s local storage until you delete it or remove the app. You can delete notes, tasks, and voice notes from within the app.</p>
+              <p>If device backups are enabled, backup copies may remain under the device account’s backup controls after local deletion. Verify this behavior for the release build.</p>
+            </div>
+            <div data-ar hidden>
+              <p>تبقى البيانات في مساحة التطبيق على الجهاز إلى أن تحذفها أو تزيل التطبيق. يمكنك حذف الملاحظات والمهام والمذكرات الصوتية من داخل التطبيق.</p>
+              <p>إذا كانت النسخ الاحتياطية على الجهاز مفعّلة، فقد تبقى نسخ منها ضمن إعدادات النسخ الاحتياطي للحساب بعد حذفها محلياً. يجب التحقق من ذلك في نسخة الإصدار.</p>
+            </div>
+          </section>
 
-## Sharing And Third Parties
+          <section class="policy-section" id="security">
+            <h2 class="section-title"><span class="section-number">05</span><span data-en="Security" data-ar="الأمان">Security</span></h2>
+            <div data-en>
+              <p>The app stores local content in app storage managed by Android. The inspected code does not provide app-level encryption for the local database or recordings.</p>
+              <p>Use your device’s screen lock and backup controls to protect access to your information.</p>
+            </div>
+            <div data-ar hidden>
+              <p>يحفظ التطبيق المحتوى المحلي في مساحة التطبيق التي يديرها Android. لا تُظهر الشيفرة التي تمت مراجعتها وجود تشفير يضيفه التطبيق إلى قاعدة البيانات أو التسجيلات الصوتية.</p>
+              <p>استخدم قفل الشاشة وإعدادات النسخ الاحتياطي لحماية الوصول إلى جهازك ومعلوماتك.</p>
+            </div>
+          </section>
 
-The current source review found no account system, advertising, analytics, or developer-operated backend. The developer must verify this against all third-party SDKs included in the release build. Android system backup and restore may handle app data according to device and account settings. The developer must verify the app's backup behavior and update this section before publication.
+          <section class="policy-section" id="children">
+            <h2 class="section-title"><span class="section-number">06</span><span data-en="Children’s Privacy" data-ar="خصوصية الأطفال">Children’s Privacy</span></h2>
+            <div data-en>
+              <p>The developer indicates that the app’s intended audience includes ages 6–8, 9–12, and 13+. The app, its content, permissions, and every included SDK must comply with Google Play’s Families policy and applicable child-privacy laws before publishing.</p>
+            </div>
+            <div data-ar hidden>
+              <p>أفاد المطوّر أن الجمهور المستهدف يشمل الأعمار من 6 إلى 8 سنوات، ومن 9 إلى 12 سنة، و13 سنة فأكثر. يجب التأكد من التزام التطبيق ومحتواه وأذوناته وكل مكتبة مضمّنة بسياسة Google Play للعائلات والقوانين المعمول بها لحماية خصوصية الأطفال قبل النشر.</p>
+            </div>
+          </section>
 
-## Retention And Deletion
+          <section class="policy-section" id="changes">
+            <h2 class="section-title"><span class="section-number">07</span><span data-en="Changes To This Policy" data-ar="التعديلات على هذه السياسة">Changes To This Policy</span></h2>
+            <div data-en>
+              <p>If the app’s data practices change, this policy will be updated and the effective date above will change.</p>
+            </div>
+            <div data-ar hidden>
+              <p>سنحدّث هذه السياسة عند تغيير ممارسات البيانات، مع تعديل تاريخ السريان أعلاه.</p>
+            </div>
+          </section>
 
-Content remains in the app's local storage until you delete it or remove the app. You can delete notes, tasks, and voice notes from within the app. If device backups are enabled, backup copies may remain under the device account's backup controls after local deletion. Verify this behavior for the release build.
+          <section class="policy-section" id="contact">
+            <h2 class="section-title"><span class="section-number">08</span><span data-en="Contact" data-ar="التواصل">Contact</span></h2>
+            <div data-en>
+              <p>For privacy questions or support, contact the developer using the email address below.</p>
+            </div>
+            <div data-ar hidden>
+              <p>للاستفسارات المتعلقة بالخصوصية أو الدعم، تواصل مع المطوّر عبر البريد الإلكتروني أدناه.</p>
+            </div>
+            <p><a href="mailto:ramykhashan99@gmail.com">ramykhashan99@gmail.com</a></p>
+          </section>
+        </article>
 
-## Security
+        <aside class="contact-card">
+          <h2 data-en="Questions about your privacy?" data-ar="هل لديك استفسار عن خصوصيتك؟">Questions about your privacy?</h2>
+          <p data-en="Contact the developer and we’ll help with your privacy-related question." data-ar="تواصل مع المطوّر وسنساعدك في استفسارك المتعلق بالخصوصية.">Contact the developer and we’ll help with your privacy-related question.</p>
+          <a href="mailto:ramykhashan99@gmail.com">ramykhashan99@gmail.com ↗</a>
+        </aside>
+      </div>
+    </div>
+  </main>
 
-The app stores local content in app storage managed by Android. The inspected code does not provide app-level encryption for the local database or recordings. Use your device's screen lock and backup controls to protect access to your information.
+  <footer>
+    <span class="footer-brand">تذكّر | Remember</span>
+    <span> · </span>
+    <span data-en="Privacy Policy · Effective October 19, 2026" data-ar="سياسة الخصوصية · سارية من 19 أكتوبر 2026">Privacy Policy · Effective October 19, 2026</span>
+  </footer>
 
-## Children
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const languageToggle = document.getElementById('languageToggle');
+      const themeToggle = document.getElementById('themeToggle');
+      let language = 'en';
 
-The developer indicates that the app's intended audience includes ages 6-8, 9-12, and 13+. The app, its content, permissions, and every included SDK must comply with Google Play's Families policy and applicable child-privacy laws before publishing.
+      function setLanguage(nextLanguage) {
+        language = nextLanguage;
+        const isArabic = language === 'ar';
+        root.lang = language;
+        root.dir = isArabic ? 'rtl' : 'ltr';
+        document.title = isArabic ? 'سياسة الخصوصية | تذكّر' : 'Privacy Policy | Remember';
+        document.querySelectorAll('[data-en][data-ar]').forEach((element) => {
+          element.textContent = element.dataset[language];
+        });
+        document.querySelectorAll('[data-en], [data-ar]').forEach((element) => {
+          if (element.hasAttribute('hidden') || element.hasAttribute('data-en') || element.hasAttribute('data-ar')) {
+            if (element.hasAttribute('data-en') && element.hasAttribute('data-ar')) return;
+          }
+        });
+        document.querySelectorAll('div[data-en], div[data-ar]').forEach((element) => {
+          if (element.parentElement && element.parentElement.classList.contains('policy-section')) {
+            element.hidden = !(element.hasAttribute('data-' + language));
+          }
+        });
+        languageToggle.textContent = isArabic ? 'English' : 'العربية';
+        languageToggle.setAttribute('aria-label', isArabic ? 'Switch to English' : 'التبديل إلى العربية');
+        document.querySelector('nav').setAttribute('aria-label', isArabic ? 'محتويات السياسة' : 'Policy contents');
+      }
 
-## Changes To This Policy
-
-If the app's data practices change, this policy will be updated and the effective date above will change.
-
-## Contact
-
-For privacy questions, contact ramykhashan99@gmail.com.
-
----
-
-# سياسة الخصوصية لتطبيق تذكّر | Remember
-
-تاريخ السريان: 19 أكتوبر 2026
-
-المطوّر: Ramy Khashan  
-للتواصل بشأن الخصوصية أو الدعم: ramykhashan99@gmail.com
-
-توضح هذه السياسة ممارسات البيانات المقصودة حالياً في تطبيق تذكّر | Remember، وهو تطبيق لإنشاء الملاحظات وتنظيم المهام والتذكيرات وتسجيل المذكرات الصوتية. لا يتطلب التطبيق إنشاء حساب.
-
-## المعلومات التي يتعامل معها التطبيق على جهازك
-
-يتيح لك التطبيق إدخال محتوى الملاحظات والمهام، واختيار صور لإرفاقها بالملاحظات، وإنشاء تسجيلات صوتية. كما يحفظ إعدادات التطبيق مثل اللغة والمظهر. وفقاً للشيفرة التي تمت مراجعتها، يحفظ التطبيق هذا المحتوى في قاعدة بيانات محلية أو ملفات خاصة بالتطبيق لتشغيل ميزاته. لم تُظهر مراجعة شيفرة Dart إرسال هذا المحتوى إلى خادم يديره المطوّر. يجب التحقق من هذه المعلومات مقابل جميع المكتبات المضمّنة ونسخة الإصدار النهائية قبل النشر.
-
-## الأذونات
-
-يُستخدم الميكروفون عند اختيارك تسجيل مذكرة صوتية. ويُستخدم الوصول إلى الصور عند اختيار صور لإرفاقها بملاحظة. كما تُستخدم أذونات الإشعارات والمنبّهات لتذكيرات المهام. يمكنك إدارة الأذونات من إعدادات الجهاز؛ وقد يؤدي رفض إذن إلى تعطيل الميزة المرتبطة به.
-
-## المشاركة والجهات الخارجية
-
-لم تُظهر مراجعة الشيفرة الحالية وجود نظام حسابات أو إعلانات أو تحليلات أو خادم يديره المطوّر. يجب على المطوّر التحقق من ذلك مقابل جميع المكتبات الخارجية في نسخة الإصدار. قد يتعامل Android مع بيانات التطبيق عبر النسخ الاحتياطي والاستعادة بحسب إعدادات الجهاز والحساب. يجب التحقق من سلوك النسخ الاحتياطي وتحديث هذا القسم قبل النشر.
-
-## الاحتفاظ بالبيانات وحذفها
-
-تبقى البيانات في مساحة التطبيق على الجهاز إلى أن تحذفها أو تزيل التطبيق. يمكنك حذف الملاحظات والمهام والمذكرات الصوتية من داخل التطبيق. إذا كانت النسخ الاحتياطية على الجهاز مفعّلة، فقد تبقى نسخ منها ضمن إعدادات النسخ الاحتياطي للحساب بعد حذفها محلياً. يجب التحقق من ذلك في نسخة الإصدار.
-
-## الأمان
-
-يحفظ التطبيق المحتوى المحلي في مساحة التطبيق التي يديرها Android. لا تُظهر الشيفرة التي تمت مراجعتها وجود تشفير يضيفه التطبيق إلى قاعدة البيانات أو التسجيلات الصوتية. استخدم قفل الشاشة وإعدادات النسخ الاحتياطي لحماية الوصول إلى جهازك ومعلوماتك.
-
-## الأطفال
-
-أفاد المطوّر أن الجمهور المستهدف يشمل الأعمار من 6 إلى 8 سنوات، ومن 9 إلى 12 سنة، و13 سنة فأكثر. يجب التأكد من التزام التطبيق ومحتواه وأذوناته وكل مكتبة مضمّنة بسياسة Google Play للعائلات والقوانين المعمول بها لحماية خصوصية الأطفال قبل النشر.
-
-## التعديلات على هذه السياسة
-
-سنحدّث هذه السياسة عند تغيير ممارسات البيانات، مع تعديل تاريخ السريان أعلاه.
-
-## التواصل
-
-للاستفسارات المتعلقة بالخصوصية، راسل ramykhashan99@gmail.com.
+      languageToggle.addEventListener('click', () => setLanguage(language === 'en' ? 'ar' : 'en'));
+      themeToggle.addEventListener('click', () => {
+        const isDark = root.dataset.theme !== 'dark';
+        root.dataset.theme = isDark ? 'dark' : 'light';
+        themeToggle.textContent = isDark ? '☀ Light mode' : '☾ Dark mode';
+        themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+      });
+    })();
+  </script>
+</body>
+</html>
