@@ -1,127 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>سياسة الخصوصية — عقار مانجر</title>
-  <style>
-    :root {
-      --ink: #101b2d;
-      --muted: #5f6b7a;
-      --line: #d9dde1;
-      --bg: #eceeef;
-      --accent: #1b5e9b;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-    h1 { font-size: 1.6rem; margin: 0 0 8px; }
-    h2 { font-size: 1.15rem; margin: 28px 0 8px; }
-    p, li { color: var(--ink); }
-    .meta { color: var(--muted); margin-bottom: 24px; }
-    section {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 20px 22px;
-      margin-bottom: 16px;
-    }
-    a { color: var(--accent); }
-    hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
-    .en { direction: ltr; text-align: left; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية - خزنة | Khazna Privacy Policy</title>
+<style>
+  :root { --ink:#1b2333; --muted:#5b6577; --brand:#16324F; --line:#d9dee8; --bg:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e6e9ef; --muted:#9aa4b5; --brand:#8DB8E8; --line:#2c3443; --bg:#121722; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; line-height:1.8; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { color: var(--brand); font-size: 1.7rem; margin-bottom: 0; }
+  h2 { color: var(--brand); font-size: 1.15rem; margin-top: 28px; }
+  .muted { color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  [lang="en"] { direction: ltr; text-align: left; }
+  a { color: var(--brand); }
+  ul { padding-inline-start: 22px; }
+</style>
 </head>
 <body>
-  <main>
-    <section>
-      <h1>سياسة الخصوصية — عقار مانجر</h1>
-      <p class="meta">آخر تحديث: 30 سبتمبر 2026</p>
-      <p><a href="delete-account.html">طلب حذف الحساب / Delete account</a></p>
-      <p>تنطبق هذه السياسة على تطبيق عقار مانجر (<code>com.aqar.manager.aqar_manager</code>) الذي يقدّمه Ramy Khashan. للتواصل: <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.</p>
+<main>
 
-      <h2>1. ما الذي نجمعه</h2>
-      <ul>
-        <li><strong>الحساب:</strong> الاسم، البريد الإلكتروني، رقم الهاتف إن أدخلته، وصورة الملف الشخصي إن رفعتها.</li>
-        <li><strong>بيانات المشروع:</strong> العقارات، المراحل، المهام، الميزانيات، المصروفات، الملاحظات، وسجل النشاط.</li>
-        <li><strong>الملفات:</strong> صور العقار وإيصالات المصروف.</li>
-        <li><strong>الإشعارات:</strong> رمز جهاز (FCM) لإرسال تنبيهات متعلقة بالمشروع.</li>
-        <li><strong>الإعدادات:</strong> اللغة والمظهر المفضّلان.</li>
-      </ul>
-      <p>لا نجمع بيانات بطاقات الدفع داخل التطبيق.</p>
+<section lang="ar" dir="rtl">
+  <h1>سياسة الخصوصية لتطبيق خزنة</h1>
+  <p class="muted">آخر تحديث: [تاريخ النشر]</p>
 
-      <h2>2. لماذا نجمعها</h2>
-      <p>لتشغيل الحساب، إدارة الفريق والعقار، المزامنة بين الأجهزة، وعرض الإشعارات. لا نستخدم البيانات للإعلانات، ولا نبيعها.</p>
+  <p>تشرح هذه السياسة البيانات التي يجمعها تطبيق «خزنة» (<code>com.ramykhashan.khazna</code>) وكيف نستخدمها ونحميها. المطوّر: [اسم المطوّر]. للتواصل: [البريد الإلكتروني للدعم].</p>
 
-      <h2>3. أين تُحفظ</h2>
-      <p>على خوادم Supabase المرتبطة بالتطبيق، مع تشفير أثناء النقل (HTTPS). صلاحيات الوصول تُفرض حسب دورك في الشركة والعقار.</p>
+  <h2>البيانات التي نجمعها</h2>
+  <ul>
+    <li><b>بيانات الحساب:</b> الاسم والبريد الإلكتروني وكلمة المرور (تُخزَّن مشفرة ولا يمكن لأحد قراءتها)، ولغة التطبيق المفضلة.</li>
+    <li><b>البيانات المالية التي تدخلها بنفسك:</b> المصروفات (المبلغ، التصنيف، التاريخ، الملاحظة)، والتصنيفات، وأهداف الادخار وحركات الإيداع والسحب، والعملة.</li>
+    <li><b>المرتب الشهري (اختياري):</b> لا يُجمع إلا إذا فعّلته بنفسك، وعند إيقافه يُحذف من الخادم.</li>
+    <li><b>صور وملفات الفواتير (اختياري):</b> فقط الصور أو ملفات PDF التي تختار إرفاقها بمصروف.</li>
+  </ul>
 
-      <h2>4. المدة والحذف</h2>
-      <p>تبقى البيانات ما دام حسابك أو عضويتك في الشركة قائمة. لطلب حذف الحساب والبيانات المرتبطة به راسل <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.</p>
+  <h2>ما لا نجمعه</h2>
+  <ul>
+    <li>لا نصل إلى حساباتك البنكية أو بطاقاتك.</li>
+    <li>لا نجمع موقعك أو جهات الاتصال أو معرّفات الإعلانات.</li>
+    <li>لا نستخدم أدوات تحليلات أو تتبع، ولا نعرض إعلانات.</li>
+    <li>البصمة وبصمة الوجه تُستخدم عبر نظام الجهاز فقط، ولا تصل إلينا أبداً.</li>
+  </ul>
 
-      <h2>5. الإذن على الجهاز</h2>
-      <ul>
-        <li>الإنترنت لمزامنة البيانات.</li>
-        <li>الكاميرا ومعرض الصور لإرفاق الإيصالات وصور العقار (اختياري).</li>
-        <li>الإشعارات للتنبيه على التأخير والمصروفات والملاحظات (يمكن إيقافها من إعدادات النظام).</li>
-      </ul>
+  <h2>كيف نستخدم البيانات</h2>
+  <p>نستخدم بياناتك فقط لتشغيل التطبيق: إنشاء حسابك وتسجيل دخولك، وحفظ مصروفاتك وأهدافك وعرض الإحصائيات لك، وإرسال رسائل تأكيد الحساب واستعادة كلمة المرور. لا نبيع بياناتك ولا نشاركها مع أي طرف لأغراض تسويقية.</p>
 
-      <h2>6. الأطفال</h2>
-      <p>التطبيق موجّه لمحترفي التشطيب وإدارة المشاريع، وليس للأطفال دون 13 سنة.</p>
+  <h2>أين تُخزَّن البيانات وكيف نحميها</h2>
+  <ul>
+    <li>تُخزَّن البيانات لدى مزوّد الخدمة <b>Supabase</b> الذي يعالجها نيابةً عنا فقط.</li>
+    <li>كل الاتصالات مشفرة (HTTPS).</li>
+    <li>قواعد أمان على مستوى قاعدة البيانات تمنع أي مستخدم من الوصول إلى بيانات غيره.</li>
+    <li>الفواتير في مساحة تخزين خاصة، ولا تُفتح إلا بروابط مؤقتة.</li>
+    <li>بيانات الجلسة على جهازك محفوظة في التخزين الآمن للنظام، ولا تدخل في النسخ الاحتياطي.</li>
+  </ul>
 
-      <h2>7. التغييرات</h2>
-      <p>قد نحدّث هذه السياسة. تاريخ «آخر تحديث» أعلاه يعكس النسخة السارية.</p>
-    </section>
+  <h2>الاحتفاظ بالبيانات وحذفها</h2>
+  <p>نحتفظ ببياناتك طالما حسابك موجود. يمكنك حذف أي مصروف أو هدف أو فاتورة في أي وقت. ويمكنك حذف حسابك وكل بياناتك نهائياً من داخل التطبيق: <b>الإعدادات ← حذف الحساب</b>، أو بطلب عبر صفحة <a href="delete-account.html">حذف الحساب</a>. يتم الحذف فوراً ولا يمكن التراجع عنه.</p>
 
-    <hr />
+  <h2>الأطفال</h2>
+  <p>التطبيق غير موجّه للأطفال دون 18 عاماً، ولا نجمع بيانات الأطفال عن قصد.</p>
 
-    <section class="en" lang="en">
-      <h1>Privacy Policy — Aqar Manager</h1>
-      <p class="meta">Last updated: 30 September 2026</p>
-      <p><a href="delete-account.html">Request account deletion</a></p>
-      <p>This policy applies to the Aqar Manager app (<code>com.aqar.manager.aqar_manager</code>) provided by Ramy Khashan. Contact: <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.</p>
+  <h2>التغييرات على هذه السياسة</h2>
+  <p>قد نحدّث هذه السياسة، وسننشر أي تعديل على هذه الصفحة مع تحديث تاريخ «آخر تحديث».</p>
 
-      <h2>1. What we collect</h2>
-      <ul>
-        <li><strong>Account:</strong> name, email, optional phone number, and optional avatar.</li>
-        <li><strong>Project data:</strong> properties, stages, tasks, budgets, expenses, notes, and activity logs.</li>
-        <li><strong>Files:</strong> property photos and expense receipts.</li>
-        <li><strong>Notifications:</strong> an FCM device token to deliver project alerts.</li>
-        <li><strong>Preferences:</strong> language and theme.</li>
-      </ul>
-      <p>We do not collect payment-card details in the app.</p>
+  <h2>تواصل معنا</h2>
+  <p>لأي سؤال عن خصوصيتك: [البريد الإلكتروني للدعم]</p>
+</section>
 
-      <h2>2. Why we collect it</h2>
-      <p>To run your account, manage teams and properties, sync across devices, and send in-app notifications. We do not use this data for advertising and we do not sell it.</p>
+<hr>
 
-      <h2>3. Where it is stored</h2>
-      <p>On the Supabase servers linked to the app, in transit over HTTPS. Access is limited by your role in the company and on each property.</p>
+<section lang="en" dir="ltr">
+  <h1>Khazna Privacy Policy</h1>
+  <p class="muted">Last updated: [publish date]</p>
 
-      <h2>4. Retention and deletion</h2>
-      <p>Data is kept while your account or company membership is active. To request deletion of your account and related data, email <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.</p>
+  <p>This policy explains what data the Khazna app (<code>com.ramykhashan.khazna</code>) collects and how we use and protect it. Developer: [developer name]. Contact: [support email].</p>
 
-      <h2>5. Device permissions</h2>
-      <ul>
-        <li>Internet, to sync data.</li>
-        <li>Camera and photos, to attach receipts and property images (optional).</li>
-        <li>Notifications, for delays, expenses, and notes (you can disable them in system settings).</li>
-      </ul>
+  <h2>Data we collect</h2>
+  <ul>
+    <li><b>Account data:</b> your name, email address and password (stored hashed; nobody can read it), and your preferred app language.</li>
+    <li><b>Financial data you enter yourself:</b> expenses (amount, category, date, note), categories, savings goals with their deposits and withdrawals, and your currency.</li>
+    <li><b>Monthly salary (optional):</b> only collected if you turn it on; turning it off deletes it from the server.</li>
+    <li><b>Receipt photos and files (optional):</b> only the images or PDF files you choose to attach to an expense.</li>
+  </ul>
 
-      <h2>6. Children</h2>
-      <p>The app is for finishing and project professionals, not for children under 13.</p>
+  <h2>What we don't collect</h2>
+  <ul>
+    <li>We never access your bank accounts or cards.</li>
+    <li>We don't collect your location, contacts or advertising IDs.</li>
+    <li>We use no analytics or tracking tools, and we show no ads.</li>
+    <li>Fingerprint and face unlock are handled by your device's operating system and never reach us.</li>
+  </ul>
 
-      <h2>7. Changes</h2>
-      <p>We may update this policy. The “Last updated” date above is the version in force.</p>
-    </section>
-  </main>
+  <h2>How we use your data</h2>
+  <p>We use your data only to run the app: creating your account and signing you in, storing your expenses and goals, showing your statistics, and sending account confirmation and password reset emails. We never sell your data or share it with anyone for marketing.</p>
+
+  <h2>Where your data is stored and how it is protected</h2>
+  <ul>
+    <li>Data is stored with our service provider <b>Supabase</b>, which processes it only on our behalf.</li>
+    <li>All connections are encrypted (HTTPS).</li>
+    <li>Database-level security rules prevent any user from accessing another user's data.</li>
+    <li>Receipts are kept in private storage and are only opened through short-lived links.</li>
+    <li>Session data on your device is kept in the system's secure storage and excluded from backups.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>We keep your data while your account exists. You can delete any expense, goal or receipt at any time. You can permanently delete your account and all your data from inside the app under <b>Settings → Delete account</b>, or request it through the <a href="delete-account.html">account deletion page</a>. Deletion is immediate and cannot be undone.</p>
+
+  <h2>Children</h2>
+  <p>The app is not intended for children under 18, and we do not knowingly collect children's data.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy. Any change will be posted on this page with an updated "Last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>For any privacy question: [support email]</p>
+</section>
+
+</main>
 </body>
 </html>
